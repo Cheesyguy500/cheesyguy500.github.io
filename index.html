@@ -10,6 +10,15 @@
     <link rel="stylesheet" type="text/css" href="css/footing.css" />
     <link rel="stylesheet" type="text/css" href="css/christmas.css" />
 <script>
+
+    
+        var passkey = "Jeff";
+        alert("Welcome to cheesyguy500.github.io! Please enter the password to continue!");
+        var attempt = prompt("Enter the password:");
+        while (attempt != passkey) {
+            alert("Incorrect passkey! Please try again.");
+            attempt = prompt("Enter the password:");
+        }
     // Function to load total time spent and display it
     function displayTotalTimeSpent() {
         const totalKey = 'totalTimeSpent';
